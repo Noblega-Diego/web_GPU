@@ -5,60 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los driver del GPU</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/Indice.css" media="screen">
 </head>
-<body class="bg-white" style="font-size: 1.4em;">
+<body class="bg-white" style="font-size: 1em;" background="img/circuit-board.svg">
+    <input type="checkbox" id="btn-menu">
     <header class="container-fluid bg-dark">
         <div class="list-inline mx-5 text-center">
-            <img class="list-inline-item" src="gpuuuye.gif" alt="imagen de GPU" height="120px">
-            <h1 class="display-4 font-weight-bold text-light align-middle list-inline-item"> El GPU y sus drivers</h1>
+            <img class="list-inline-item" src="img/gpuGIF.gif" alt="imagen de GPU" height="120px">
+            <h1 class="display-5 font-weight-bold text-light align-middle list-inline-item"> El GPU y sus drivers</h1>
         </div>
         <hr >
             <h1 class="text-center h4 font-weight text-info">Sistema de Procesamiento de Datos</h1>
         <hr>
     </header>
+    
+    <!-- Contenido de la pagina -->
 
-    <div class="container-fluid px-5">
-        <div class="row ">
-            <div class="col-3">
-                <nav class="navbar navbar-light bg-light flex-column">
-                    <a class="navbar-brand "> Indice </a>
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link"                 href="#titulo1">Tarjetas Gráficas</a>
-                        <a class="nav-link"                 href="#titulo2">GPU</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ml-3 my-1"   href="#sub1titulo2">Funcionamiento</a>
-                            <a class="nav-link ml-3 my-1"   href="#sub2titulo2">Graficos</a>
-                            <a class="nav-link ml-3 my-1"   href="#sub3titulo2">¿A que estan dedicadas?</a>
-                            <a class="nav-link ml-3 my-1"   href="#sub4titulo2">Interfaz con la Placa Base</a>
-                            <a class="nav-link ml-3 my-1"   href="#sub5titulo2">Interfaces de salida</a>
-                            <a class="nav-link ml-3 my-1"   href="#sub6titulo2">RAMDAC</a>
-                        </nav>
-                        <a class="nav-link"                 href="#titulo3">API</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ml-3 my-1"   href="#sub1titulo3">tipos de API</a>
-                        </nav>
-                        <a class="nav-link"                 href="#titulo4">Controladores</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ml-3 my-1"   href="#sub1titulo4">¿Cómo interactúa el software con la Placa Gráfica?</a>
-                            <a class="nav-link ml-3 my-1"   href="#sub2titulo4">Driver de un Dispositivo</a>
-                            <div class="nav nav-pills flex-column">
-                                <a class="nav-link ml-5 my-1" href="#sub1sub2titulo4">Operaciones de entrada/saada</a>
-                                <a class="nav-link ml-5 my-1" href="#sub2sub2titulo4">Estructura del sistema de E/S</a>
-                                <a class="nav-link ml-5 my-1" href="#sub3sub2titulo4">Comunicación entre el módulo de E/S y el controlador de dispositivo periférico</a>
-                            </div>
-                            <a class="nav-link ml-3 my-1"   href="#sub3titulo4">Programacion de la gpu</a>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ml-5 my-1" href="#sub1sub3titulo4">MMIO</a>
-                                <a class="nav-link ml-5 my-1" href="#sub2sub3titulo4">DMA</a>
-                            </nav>
-                        </nav>
-                    </nav>
-                </nav>
-            </div>
+    <div class="container-sm" style="font-size: 1.5em;">
+        <div class="">
             <article class="col bg-light"  >
                 <h3 id="titulo1">Tarjetas Gráficas</h3>
                 <p class="text-justify">
-                    <img src="nvidea.jpg" class="ml-4" alt="placa nvidea" height="130px" style="float: right; border: 1px solid #000;" />
+                    <img src="img/nvidiaGPU.jpg" class="ml-4" alt="placa nvidea" height="200em" style="float: right; border: 1px solid #000;" />
                     &emsp;Una tarjeta gráfica es una tarjeta de expansión de la placa base del ordenador que se encarga de procesar los datos provenientes de la unidad central de procesamiento (CPU) y transformarlos en información comprensible y representable en el dispositivo de salida (por ejemplo: monitor, televisor o proyector).
                     Esta placa puede contar con una unidad de procesamiento gráfico GPU. Actualmente todas las placas de video cuentan con una. Esta es la encargada de procesar las imágenes, realizar operaciones para las formas geométricas 2D o 3D, para luego representarlas sobre el dispositivo de salida.
                 </p>
@@ -66,8 +34,8 @@
                 <p class="text-justify">
                     &emsp;Cabe aclarar que estas GPU son equiparables a una computadoras, contando con unidades de cálculo, un bus, espacio de direcciones y unidades computacionales así como una memoria de uso propio.
                 </p>
-                <img src="nvidia.svg" alt="placa nvidea" height="200px"/>
-                <img src="amd.svg" alt="placa nvidea" height="170px"/>
+                <img src="img/nvidia.svg" alt="placa nvidea" height="140em"/>
+                <img src="img/amd.svg" alt="placa nvidea" height="125em"/>
                 <h4 id="sub1titulo2">Funcionamiento</h4>
                 <p class="text-justify">
                     &emsp;Al estar exclusivamente dedicado al procesamiento gráfico libera al CPU de realizar los cálculos y operaciones correspondientes para dibujar formas geométricas  requeridas y libera de la carga de ejecución al CPU y este puede dedicarse a otro tipo de cálculos requeridos por el software.
@@ -136,7 +104,7 @@
                 </p>
                 <h4 id="sub1sub2titulo4">Operaciones de entrada/salida:</h4>
                 <p class="text-justify">
-                <img src="screenshoteasy (32).png" class="ml-4" alt="placa nvidea" height="250px" style="float: right;" />
+                <img src="img/contoladorDispositivo.png" class="ml-4" alt="placa nvidea" height="250px" style="float: right;" />
                 &emsp;Para que un computador pueda ejecutar un programa debe ser ubicado previamente en la memoria, junto con los datos sobre los que opera, y para ello debe existir una unidad funcional de entrada de información capaz de escribir en la memoria desde el exterior. Análogamente, para conocer los resultados de la ejecución de los programas, los usuarios deberán poder leer el contenido de la memoria a través de otra unidad de salida de datos. La unidad de Entrada/Salida (E/S) soporta estas funciones, realizando las comunicaciones del computador (memoria) con el mundo exterior (periféricos).                existen una serie de funciones básicas comunes a todo dispositivo de E/S:
                 Identificación única del dispositivo por parte de la CPU
                 Capacidad de envío y recepción de datos
@@ -187,7 +155,7 @@
                 formas y la interfaz es de hecho totalmente específica de la tarjeta.
                 </p>
                 <h3 id="sub3titulo4">PROGRAMACIÓN DE LA GPU</h4>
-                <img src="chip.jpeg" alt="placa nvidea" height="200px"/>
+                <img src="img/chip.jpeg" alt="placa nvidea" height="200px"/>
                 <h4 id="sub1sub3titulo4">MMIO</h4>
                 <p>
                     &emsp;MMIO es el acceso más directo a la tarjeta.
@@ -221,7 +189,7 @@
                 </ul> 
                 <div>
                 <P>A continuación se muestra de forma ilustrativa como trabaja el DMA:</P>
-                <img src="dma.jpeg" alt="DMA" height="260px"/></div>
+                <img src="img/dma.jpeg" alt="DMA" height="400em"/></div>
                 &emsp;Como MMIO entre la CPU y la GPU es sincrónico y los controladores de gráficos usan inherentemente una gran cantidad de E / S, un medio más rápido
                 de comunicarse con la tarjeta.
                 El comando FIFO es una parte de
@@ -233,8 +201,62 @@
         </div>
     </div>
 
+    <!-- Indice Button-->
+
+    <div id="Indice-button" class="bg-info">
+        <label for="btn-menu">
+            <span>
+                <img src="img/bootstrap-icons/list.svg" alt="lista" id="Abrir-Indice">
+            </span>
+        </label>
+        
+    </div>
+
+     <!-- Indice -->
+
+    <div id="Indice">
+        <p class="display-4 text-center font-weight-bold text-light"> Indice </p>
+        <hr/>
+        <nav class="navbar navbar-light flex-column">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link"                 href="#titulo1">Tarjetas Gráficas</a>
+                <a class="nav-link"                 href="#titulo2">GPU</a>
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ml-3"   href="#sub1titulo2">Funcionamiento</a>
+                    <a class="nav-link ml-3"   href="#sub2titulo2">Graficos</a>
+                    <a class="nav-link ml-3"   href="#sub3titulo2">¿A que estan dedicadas?</a>
+                    <a class="nav-link ml-3"   href="#sub4titulo2">Interfaz con la Placa Base</a>
+                    <a class="nav-link ml-3"   href="#sub5titulo2">Interfaces de salida</a>
+                    <a class="nav-link ml-3"   href="#sub6titulo2">RAMDAC</a>
+                </nav>
+                <a class="nav-link"                 href="#titulo3">API</a>
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ml-3"   href="#sub1titulo3">tipos de API</a>
+                </nav>
+                <a class="nav-link"                 href="#titulo4">Controladores</a>
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ml-3"   href="#sub1titulo4">¿Cómo interactúa el software con la Placa Gráfica?</a>
+                    <a class="nav-link ml-3"   href="#sub2titulo4">Driver de un Dispositivo</a>
+                    <div class="nav nav-pills flex-column">
+                        <a class="nav-link ml-5" href="#sub1sub2titulo4">Operaciones de entrada/saada</a>
+                        <a class="nav-link ml-5" href="#sub2sub2titulo4">Estructura del sistema de E/S</a>
+                        <a class="nav-link ml-5" href="#sub3sub2titulo4">Comunicación entre el módulo de E/S y el controlador de dispositivo periférico</a>
+                    </div>
+                    <a class="nav-link ml-3"   href="#sub3titulo4">Programacion de la gpu</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-5" href="#sub1sub3titulo4">MMIO</a>
+                        <a class="nav-link ml-5" href="#sub2sub3titulo4">DMA</a>
+                    </nav>
+                </nav>
+            </nav>
+        </nav>
+    </div>
+    
+    <!-- Footer final de la pagina-->
+
     <footer class="bg-dark mt-5" style="height: 100px;">
-        <p class="text-light text-center align-middle">Diego Noblega, Federico Tobar,  Agustin Stocco,  Maximiliano Brotzu,  Lucas Dalmasso,  Abel Flores</p>
+        <p class="text-light text-center align-center">Diego Noblega, Federico Tobar,  Agustin Stocco,  Maximiliano Brotzu,  Lucas Dalmasso,  Abel Flores</p>
     </footer>
+    
 </body>
 </html>

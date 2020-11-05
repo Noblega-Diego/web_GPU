@@ -1,0 +1,58 @@
+
+#Indice{
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    font-size: 0.8em;
+    width: 30em;
+    transition: 300ms;
+    transform: translate(-100%);
+    -webkit-backdrop-filter: blur(12px); /* Safari 9+ */
+    backdrop-filter: blur(12px); /* Chrome and Opera */
+    background-color: rgba(0, 0, 0, 0.781);
+}
+#Indice a{
+    font-size: 1.2em;
+}
+
+#Indice-button {
+    position: fixed;
+    top: 1em;
+    left: 2em;
+    width: 3em;
+    height: 3em;
+    border-radius: 10%;
+    transition: 300ms;
+}
+#Indice-button label{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+#Indice-button span{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#Indice-button img{
+    height: 2.3em;
+    width: 2.3em;
+}
+#btn-menu{
+    display: none;
+}
+
+#Abrir-Indice{
+    visibility: visible;
+}
+
+#btn-menu:checked ~ #Indice{
+    transform: translate(0%);
+}
+#btn-menu:checked ~ #Indice-button{
+    height: 96vh;
+    border-radius: 1em;
+    transform: translate(23em);
+}
