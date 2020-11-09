@@ -22,8 +22,8 @@
     <!-- Contenido de la pagina -->
 
     <div class="container-sm" style="font-size: 1.5em;">
-        <div class="">
-            <article class="col bg-light"  >
+        <article>
+            <div class="articulo-parte bg-light">
                 <h3 id="titulo1">Tarjetas Gráficas</h3>
                 <p class="text-justify">
                     <img src="img/nvidiaGPU.jpg" class="ml-4" alt="placa nvidea" height="200em" style="float: right; border: 1px solid #000;" />
@@ -97,6 +97,8 @@
                 Para que todo esto suceda el GPU debe soportar el formato viejo de video VGA. Entonces después el Sistema Operativo se encarga de comenzar su carga. Esto no quiere decir que la GPU esté funcionando a su máximo nivel. Todavía no existen drivers cargados y éste se mostrará en un modo de pantalla muy básico. Con lo cual no tenemos las funciones de aceleración, pero deja ver una gráfica básica para que podamos cargarle nuestros propios drivers ó si el Sistema Operativo ya tiene los suyos propios específicos mostrará en pantalla la aceleración completa.
                 En lo que resta de esta investigación es explicar como hace el Sistema Operativo en arquitecturas x86 y x64 para que el sistema operativo pueda comunicarse de la forma más eficiente posible con la GPU. 
                 </p>
+            </div>
+            <div class="articulo-parte bg-light">    
                 <h3 id="sub2titulo4">Driver de un Dispositivo</h3>
                 <p class="text-justify">
                     &emsp;Lo primero a tener en cuenta en el desarrollo de un driver son las capas de abstracción de dicha máquina (sea ya Intel, ARM, etc). El Sistema operativo, que es el responsable con su Kernel (Núcleo) gestionar el hardware en la máquina: Memoria para programas y Sistemas de E/S. 
@@ -197,8 +199,8 @@
                 &emsp;la tarjeta gráfica y la CPU, donde la CPU coloca el comando para su posterior ejecución
                 por la GPU.
                 </p>
-            </article>
-        </div>
+            </div>
+        </article>
     </div>
 
     <!-- Indice Button-->
@@ -222,7 +224,7 @@
                 <a class="nav-link"                 href="#titulo1">Tarjetas Gráficas</a>
                 <a class="nav-link"                 href="#titulo2">GPU</a>
                 <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ml-3"   href="#sub1titulo2">Funcionamiento</a>
+                    <a class="nav-link ml-3 "   href="#sub1titulo2">Funcionamiento</a>
                     <a class="nav-link ml-3"   href="#sub2titulo2">Graficos</a>
                     <a class="nav-link ml-3"   href="#sub3titulo2">¿A que estan dedicadas?</a>
                     <a class="nav-link ml-3"   href="#sub4titulo2">Interfaz con la Placa Base</a>
@@ -257,6 +259,5 @@
     <footer class="bg-dark mt-5" style="height: 100px;">
         <p class="text-light text-center align-center">Diego Noblega, Federico Tobar,  Agustin Stocco,  Maximiliano Brotzu,  Lucas Dalmasso,  Abel Flores</p>
     </footer>
-    
 </body>
 </html>

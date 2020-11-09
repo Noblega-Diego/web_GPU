@@ -1,4 +1,10 @@
 
+html{
+    scroll-behavior: smooth;    /* efecto scrooll*/
+}
+body{
+    background-size: 10em;
+}
 #Indice{
     position: fixed;
     top: 0px;
@@ -55,4 +61,10 @@
     height: 96vh;
     border-radius: 1em;
     transform: translate(23em);
+}
+
+.articulo-parte{
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-top: 2em;
 }
